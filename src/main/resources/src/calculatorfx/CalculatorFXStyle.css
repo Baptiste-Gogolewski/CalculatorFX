@@ -10,3 +10,9 @@
     -fx-background-color: linear-gradient(to top, #30cfd0, #330867);
     -fx-background-radius: 15 15 25 25;
 }
+
+.Highlight
+{
+    -fx-background-color: #00000025;
+    -fx-background-radius: 15;
+}

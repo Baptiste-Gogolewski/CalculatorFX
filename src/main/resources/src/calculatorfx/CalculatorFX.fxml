@@ -5,11 +5,168 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
 
 <AnchorPane prefHeight="610.0" prefWidth="460.0" styleClass="root" stylesheets="@CalculatorFXStyle.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.calculatorfx.CalculatorFXController">
    <children>
-      <Pane layoutX="5.0" layoutY="35.0" prefHeight="568.0" prefWidth="451.0" styleClass="MainPane" stylesheets="@CalculatorFXStyle.css" />
+      <Pane layoutX="5.0" layoutY="35.0" prefHeight="568.0" prefWidth="451.0" styleClass="MainPane" stylesheets="@CalculatorFXStyle.css">
+         <children>
+            <Pane layoutX="11.0" layoutY="14.0" prefHeight="100.0" prefWidth="429.0" styleClass="Highlight" stylesheets="@CalculatorFXStyle.css">
+               <children>
+                  <Label fx:id="ResultLabel" layoutX="368.0" layoutY="24.0" text="0.0" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="13.0" layoutY="128.0" prefHeight="100.0" prefWidth="100.0" styleClass="Highlight" stylesheets="@CalculatorFXStyle.css">
+               <children>
+                  <Label layoutX="40.0" layoutY="24.0" text="7" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="230.0" layoutY="128.0" prefHeight="100.0" prefWidth="100.0" styleClass="Highlight" stylesheets="@CalculatorFXStyle.css">
+               <children>
+                  <Label layoutX="38.0" layoutY="24.0" text="9" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="122.0" layoutY="128.0" prefHeight="100.0" prefWidth="100.0" styleClass="Highlight" stylesheets="@CalculatorFXStyle.css">
+               <children>
+                  <Label layoutX="40.0" layoutY="24.0" text="8" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="339.0" layoutY="128.0" prefHeight="100.0" prefWidth="100.0" styleClass="Highlight" stylesheets="@CalculatorFXStyle.css">
+               <children>
+                  <Label fx:id="Divide" layoutX="43.0" layoutY="22.0" text="/" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="13.0" layoutY="234.0" prefHeight="100.0" prefWidth="100.0" styleClass="Highlight" stylesheets="@CalculatorFXStyle.css">
+               <children>
+                  <Label layoutX="41.0" layoutY="24.0" text="4" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="230.0" layoutY="234.0" prefHeight="100.0" prefWidth="100.0" styleClass="Highlight" stylesheets="@CalculatorFXStyle.css">
+               <children>
+                  <Label layoutX="38.0" layoutY="24.0" text="6" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="122.0" layoutY="234.0" prefHeight="100.0" prefWidth="100.0" styleClass="Highlight" stylesheets="@CalculatorFXStyle.css">
+               <children>
+                  <Label layoutX="37.0" layoutY="25.0" text="5" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="Multiply" layoutX="339.0" layoutY="234.0" prefHeight="100.0" prefWidth="100.0" styleClass="Highlight" stylesheets="@CalculatorFXStyle.css">
+               <children>
+                  <Label layoutX="42.0" layoutY="24.0" text="x" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="13.0" layoutY="344.0" prefHeight="100.0" prefWidth="100.0" styleClass="Highlight" stylesheets="@CalculatorFXStyle.css">
+               <children>
+                  <Label layoutX="38.0" layoutY="20.0" text="1" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="230.0" layoutY="344.0" prefHeight="100.0" prefWidth="100.0" styleClass="Highlight" stylesheets="@CalculatorFXStyle.css">
+               <children>
+                  <Label layoutX="39.0" layoutY="25.0" text="3" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="122.0" layoutY="344.0" prefHeight="100.0" prefWidth="100.0" styleClass="Highlight" stylesheets="@CalculatorFXStyle.css">
+               <children>
+                  <Label layoutX="39.0" layoutY="20.0" text="2" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="Plus" layoutX="339.0" layoutY="344.0" prefHeight="100.0" prefWidth="100.0" styleClass="Highlight" stylesheets="@CalculatorFXStyle.css">
+               <children>
+                  <Label layoutX="38.0" layoutY="23.0" text="+" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="13.0" layoutY="454.0" onMouseClicked="#OnZeroClick" prefHeight="100.0" prefWidth="100.0" styleClass="Highlight" stylesheets="@CalculatorFXStyle.css">
+               <children>
+                  <Label layoutX="39.0" layoutY="24.0" text="0" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="230.0" layoutY="454.0" prefHeight="100.0" prefWidth="100.0" styleClass="Highlight" stylesheets="@CalculatorFXStyle.css">
+               <children>
+                  <Label layoutX="38.0" layoutY="24.0" text="=" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="122.0" layoutY="454.0" prefHeight="100.0" prefWidth="100.0" styleClass="Highlight" stylesheets="@CalculatorFXStyle.css">
+               <children>
+                  <Label layoutX="37.0" layoutY="24.0" text="C" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="Minus" layoutX="339.0" layoutY="454.0" prefHeight="100.0" prefWidth="100.0" styleClass="Highlight" stylesheets="@CalculatorFXStyle.css">
+               <children>
+                  <Label layoutX="43.0" layoutY="24.0" text="-" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
       <Pane fx:id="TitlePane" prefHeight="34.0" prefWidth="460.0" AnchorPane.bottomAnchor="576.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <ImageView fx:id="CloseButton" fitHeight="18.0" fitWidth="18.0" layoutX="428.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
