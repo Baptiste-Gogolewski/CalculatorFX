@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane prefHeight="610.0" prefWidth="460.0" styleClass="root" stylesheets="@CalculatorFXStyle.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.calculatorfx.CalculatorFXController">
+   <children>
+      <Pane layoutX="5.0" layoutY="35.0" prefHeight="568.0" prefWidth="451.0" styleClass="MainPane" stylesheets="@CalculatorFXStyle.css" />
+      <Pane fx:id="TitlePane" prefHeight="34.0" prefWidth="460.0" AnchorPane.bottomAnchor="576.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="CloseButton" fitHeight="18.0" fitWidth="18.0" layoutX="428.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Close.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MinimizeButton" fitHeight="16.0" fitWidth="16.0" layoutX="405.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Minimize.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@IconBis.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="32.0" layoutY="12.0" text="Calculator" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

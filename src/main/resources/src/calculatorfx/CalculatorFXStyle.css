@@ -1,0 +1,12 @@
+.root
+{
+    -fx-background-color: #222;
+    -fx-background-radius: 28;
+}
+
+.MainPane
+{
+    /* Applique un dégradé de couleur de #30cfd0 vers #330867 */
+    -fx-background-color: linear-gradient(to top, #30cfd0, #330867);
+    -fx-background-radius: 15 15 25 25;
+}
