@@ -20,8 +20,6 @@ public class CalculatorFXController
     private Label ResultLabel;
 
     private double x, y;
-    private double Num1 = 0;
-    private String Operator = "+";
 
     public void Init(Stage primaryStage)
     {
